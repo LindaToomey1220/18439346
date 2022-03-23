@@ -12,7 +12,7 @@ public class menuItem : MonoBehaviour
     void Awake()
     {
         parent = gameObject.transform.parent.gameObject;
-        Debug.Log("Pinching Something");
+        //Debug.Log("Pinching Something");
     }
 }
 

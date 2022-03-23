@@ -71,8 +71,8 @@ namespace Facebook.WitAi.CallbackHandlers
 
             var confidenceProperty = serializedObject.FindProperty("confidence");
             EditorGUILayout.PropertyField(confidenceProperty);
-            //Used to say 16
-            EditorGUILayout.Space();
+
+            EditorGUILayout.Space(16);
             var formatProperty = serializedObject.FindProperty("format");
             EditorGUILayout.PropertyField(formatProperty);
 
