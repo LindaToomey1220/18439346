@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 5511441899696531908}
   m_Layer: 0
   m_Name: 'tree Variant '
-  m_TagString: Untagged
+  m_TagString: menuItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

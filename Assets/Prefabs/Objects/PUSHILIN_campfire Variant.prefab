@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &8569038310614784825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2502998174016648425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.677096, y: 2.667114, z: 1.5852621}
+  m_Center: {x: 0.025838017, y: 0.8216051, z: -0.0014729798}
 --- !u!54 &-2104613277922060883
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -108,19 +121,6 @@ MonoBehaviour:
   _snapPoints: []
   _snapPointPositionEaseTime: 0
   _snapPointRotationEaseTime: 0
---- !u!65 &8569038310614784825
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2502998174016648425}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.677096, y: 2.667114, z: 1.5852621}
-  m_Center: {x: 0.025838017, y: 0.8216051, z: -0.0014729798}
 --- !u!1001 &6048560396407206241
 PrefabInstance:
   m_ObjectHideFlags: 0

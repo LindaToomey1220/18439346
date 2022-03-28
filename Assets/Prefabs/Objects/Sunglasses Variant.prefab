@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &7722727577567101268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819275334907314859}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 262.4936, y: 94.591644, z: 236.57397}
+  m_Center: {x: 0, y: 10.960159, z: -109.14809}
 --- !u!54 &-7803136845442401042
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -108,19 +121,6 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 2237152771407398678}
   _pointables:
   - {fileID: 2951027740252944992}
---- !u!65 &7722727577567101268
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819275334907314859}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 262.4936, y: 94.591644, z: 236.57397}
-  m_Center: {x: 0, y: 10.960159, z: -109.14809}
 --- !u!1001 &7526640287090312995
 PrefabInstance:
   m_ObjectHideFlags: 0

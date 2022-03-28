@@ -17,24 +17,27 @@ public class ColliderHit : MonoBehaviour
     {
         if (col.gameObject.tag != "menuItem")
         {
-            if (col.gameObject.name != "" || col.gameObject.name == "RightHandVisual" || col.gameObject.name == "OculusHand_R" || col.gameObject.name == "HandGrabInteractor" || col.gameObject.name == "OVRHandPrefab")
-            {
-
-                if (topLevelItem)
+            if (col.gameObject.tag != "myMenu") { 
+                if (col.gameObject.name != "" || col.gameObject.name == "RightHandVisual" || col.gameObject.name == "OculusHand_R" || col.gameObject.name == "HandGrabInteractor" || col.gameObject.name == "OVRHandPrefab")
                 {
-                    topLevelMenu.SetActive(false);
-                    sublevel.SetActive(true);
-                    sublevel.transform.position = topMenuItem.transform.position;
-                    sublevel.transform.rotation = topMenuItem.transform.rotation;
-                }
-                else
-                {
-                    // Return if it is instantiated
-                    if (isInstantiated) return;
 
-                    // Otherwise spawn and wait
-                    StartCoroutine(waiter());
+                    if (topLevelItem)
+                    {
+                        topLevelMenu.SetActive(false);
+                        sublevel.SetActive(true);
+                        sublevel.transform.position = topMenuItem.transform.position;
+                        sublevel.transform.rotation = topMenuItem.transform.rotation;
 
+                    }
+                    else
+                    {
+                        // Return if it is instantiated
+                        if (isInstantiated) return;
+
+                        // Otherwise spawn and wait
+                        StartCoroutine(waiter());
+
+                    }
                 }
             }
         }
@@ -55,6 +58,7 @@ public class ColliderHit : MonoBehaviour
         spawned.transform.localScale = itemsSca;
         var zpos = itemsPos.z - (0.1f);
         spawned.transform.position = new Vector3(itemsPos.x, itemsPos.y, zpos);
+        spawned.tag = "menuItem";
 
         //Wait for 4 seconds
         yield return new WaitForSeconds(4);
